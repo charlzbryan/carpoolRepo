@@ -1,0 +1,35 @@
+<html>
+<head>
+	<title>Hitch a ride</title>
+	<meta content="width=device-width, initial-scale=1" name="viewport" />
+	<link href="http://code.jquery.com/mobile/1.0b2/jquery.mobile-1.0b2.min.css" rel="stylesheet" />
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.6.2.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/mobile/1.0b2/jquery.mobile-1.0b2.min.js"></script>
+</head>
+<script type="text/javascript" >
+function submitForm()
+{
+    form.submit();
+}
+    
+</script>
+<body>
+<div data-theme="d" id="login" data-role="page">
+<div data-role="header" data-theme="a">
+<h1>Hitch A Ride</h1>
+</div>
+
+<div data-role="content" align="center">
+<img src="http://tworiversuu.org/wp-content/uploads/2011/05/carpool-bug.jpg" width="200" height="200"/>
+</div>
+<div data-role="content">
+<form method="POST" name="form" action="code/login.php">
+<label align="left">Username:</label> 
+<input id="username" name="username" type="text" /> 
+<label align="left">Password:</label> <input name="password" type="password" />
+<input type="button" value="OK" onclick="submitForm();" /> 
+<input name="submitted" type="hidden" value="1" /> 
+</div>
+</div>
+</body>
+</html>
